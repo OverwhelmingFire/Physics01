@@ -1,4 +1,4 @@
-#ABSTRACT:
+# ABSTRACT:
 
 *Why are the electromagnetic waves slowed down when they travel through medium? Having looked through hoards of articles on this topic, barely did I find an answer to my question.* 
 
@@ -13,10 +13,10 @@ The nature of this effect has been well explained by Feynman in the **"Lectures 
 
 Having hardly tried applying mathematics, I admittedly didn't manage to understand why does the interaction between the medium's electrons and the source wave give this very result - the source wave appearing to be slowed down. So then I decided to write a script. Let the computer do all the maths involved in the process.
 
-##REQIUREMENTS:
+## REQIUREMENTS:
 - OS: Ubuntu\Debian
 
-##HOW TO LAUNCH:
+## HOW TO LAUNCH:
 - compile the script.c manually:
 	1. install glut:
 		apt-get install libgl1-mesa-dev freeglut3-dev libglew-dev
