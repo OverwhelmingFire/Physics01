@@ -148,6 +148,9 @@ void drawElectron(Electron * e) {
     }
     for (int i = 0; i < 2*arraySize && i < (*e).pointer; i++){
         glVertex3d((*e).x+(double)i/100, 100*((*e).values[(*e).pointer-i-1]), 0.0);
+        if ((*e).values[i]==0 && (*e).values[i-1]==0) {
+            break;
+        }
     }
     glEnd();
 }
@@ -218,15 +221,16 @@ void draw()
 
     // We create the first matrix to display the waves.
     glLoadIdentity();
-
-    //GLfloat ambientColor[] = {0.2, 0.2, 0.2, 1.0};
-    //glLightModelfv(GL_LIGHT_MODEL_AMBIENT, ambientColor);
-    //GLfloat lightColor0[] = {0.5, 0.5, 0.5, 1.0};
-    //GLfloat lightPos0[] = {4.0, 0.0, 8.0, 1.0};
-    //glLightfv(GL_LIGHT0, GL_DIFFUSE, lightColor0);
-    //glLightfv(GL_LIGHT0, GL_POSITION, lightPos0);
     glScalef(scaleX,scaleY,0.3);
     glTranslatef(baseX+addX, baseY+addY, 0.0);
+
+    glBegin(GL_POLYGON);
+    glColor3f(0.0,0.0,0.0);
+    glVertex3d(-horizontalMax,1,0);
+    glVertex3d(b.x,1,0);
+    glVertex3d(b.x,-1,0);
+    glVertex3d(-horizontalMax,-1,0);
+    glEnd();
 
 
     beamPropagate(&b);
@@ -241,7 +245,6 @@ void draw()
     }
 
     globalCounter++;
-
 
     glBegin(GL_POINTS);
     glColor3f(0.0,0.0,0.9);
