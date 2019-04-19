@@ -1,7 +1,6 @@
-# ABSTRACT:
-
 *Why are the electromagnetic waves slowed down when they travel through medium? Having looked through hoards of articles on this topic, barely did I find an answer to my question.* 
 
+## ABSTRACT:
 The electromagnetic radiation propagate in every medium at the speed of light in vacuum. However, the measurements will show you the opposite: phase of the wave falling on a dielectric plate will appear to be slightly shifted back from the expected value after propagating through the plate. The wave knows nothing about the medium with which it interacts, so how can it ever be possible? The thing is that secondary electromagnetic waves produced by the medium's electrons oscillate due to the source (primary) electromagnetic wave and thereafter, interfering with it, make it look like as if the primary wave has been slowed down (in the dielectrics) or reflected fully (in the superconductors). 
 
 The nature of this effect has been well explained by Feynman in the **"Lectures on Physics", vol.1, chapter 31:**
