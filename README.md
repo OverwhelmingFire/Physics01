@@ -1,4 +1,4 @@
-##ABSTRACT:
+#ABSTRACT:
 
 *Why are the electromagnetic waves slowed down when they travel through medium? Having looked through hoards of articles on this topic, barely did I find an answer to my question.* 
 
